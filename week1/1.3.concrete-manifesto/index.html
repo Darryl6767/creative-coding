@@ -9,7 +9,44 @@
     -->  
 
     <style type="text/css">
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9; 
+            padding: 20px; 
+        }
 
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            font-size: 20px; 
+            line-height: 1.5; 
+            font-weight: bold; 
+            font-style: italic; 
+            color: #333; 
+            margin-bottom: 20px; 
+        }
+
+        /* Style for the manifesto */
+        #manifesto {
+            font-size: 24px; 
+            font-weight: bold; 
+            font-family: 'Arial Black', sans-serif; /
+            color: #333; 
+            text-align: center; 
+            padding: 20px; 
+            background-color: #fff; 
+            border: 2px solid #333; 
+            border-radius: 10px; 
+            max-width: 600px; 
+            margin: 0 auto; 
+        }
+
+        #manifesto:hover {
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -17,5 +54,21 @@
     <h1>This is a Manifesto</h1>
     <p>This is a paragraph.</p>
 
+    <!-- Manifesto text -->
+    <div id="manifesto">
+        They’re not fond of rules, and they have no respect for the status quo.
+    </div>
+
+    <!-- JavaScript to increase font size on click -->
+    <script type="text/javascript">
+        let manifesto = document.getElementById("manifesto");
+
+        manifesto.onclick = function(){
+            let fs = window.getComputedStyle(this, null).getPropertyValue('font-size');
+            fs = parseFloat(fs);
+            this.style.fontSize = (fs * 1.1) + 'px';
+        };
+    </script>
+
 </body>
-</html> 
+</html>
