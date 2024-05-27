@@ -3,23 +3,58 @@
 <head>
     <meta charset="utf-8">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
-
-
     <title>My Self Portrait</title> 
     <!--
         Use this page to complete the "Data Self Portrait" project:
         https://canvas.umw.edu/courses/1498218/assignments/11723291
     -->  
 
-    <style type="text/css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
 
+        .column {
+            float: left;
+            width: 33.33%;
+            padding: 5px;
+        }
 
+        /* Clearfix (clear floats) */
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
 
-    </style>
-
+        footer {
+            text-align: center;
+            padding: 10px;
+            font-size: 50px;
+            background-color: lightblue;
+            margin-top: 20px;
+             color: white;
+              text-shadow: 2px 2px #000000
+        }
+           body {
+            background-color: lightblue; 
+        }
+        </style>
 </head>
 <body>
-
-
+    <div class="row">
+        <div class="column">
+            <img src="kyle.png" alt="Kyle" height="530" width="400" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="stats.png" alt="Shinob1" height="530" width="400" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="show.png" alt="Show" height="530" width="400" style="width:100%">
+        </div>
+    </div>
+    <footer>
+       <b> This is SH1NOB1 </b>
+    </footer>
 </body>
-</html> 
+</html>
