@@ -1,3 +1,5 @@
+//This is a zoomed in pixel portrait Bobby Drake(aka Iceman), my favorite X-Men. I was actually scrolling on the internet and I saw this "guess the character" game/video where you guess who the character is from distorted pixels, so I wanted to try to replicate that in some sort of way.
+
 let img;
 let sampleX =45;
 let sampleY= 45;
